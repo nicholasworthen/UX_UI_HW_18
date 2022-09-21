@@ -1,0 +1,124 @@
+
+.inline-block{
+    
+    display: inline-block;
+    
+    vertical-align: top;
+}
+div.inline-block{
+    display: flex;
+}
+.logo{
+    width: 73%;
+    padding: 1%;
+    margin: auto;
+    
+}
+.logoText{
+   
+    width: 73%;
+    margin: auto;
+    
+   
+}
+.pageLogo{
+    float: left;
+    width: 23%;
+}
+
+h1{
+    
+    width: 90%;
+    text-align: right;
+    font-family: Volkhov;
+    font-size: 50px;
+    margin: auto;
+    padding-top: 2%;
+}
+
+nav{
+    
+    width: 90%;
+    margin: auto;
+    padding: 1%; 
+}
+
+ul{
+    display: flex;
+    justify-content: flex-end;
+  
+    
+}
+
+li{
+    display: inline;
+    list-style-type: none;
+    font-family:"Spline Sans";
+    font-weight: medium;
+    
+    width: 100px;
+    padding-top:10px;
+    padding-bottom: 10px;
+    text-align: center; 
+}
+
+.headerNav{
+    color: white;
+    background-color: #3185FC;
+    
+}
+
+.heroImg{
+    
+    width: 65%;
+    
+    margin: auto;
+}
+
+#longHorn{
+    width: 95%;
+    opacity: 99%;
+}
+
+.content{
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    
+}
+
+footer ul{
+    display: flex;
+    vertical-align: top;
+    justify-content: center;
+    padding: auto;
+    width: 90%;
+    margin: auto;
+    
+}
+p{
+    background-color:rgba(49,133,252,.8);
+     
+    padding: 20px;
+    color: white;
+    font-family: "Spline Sans";
+    font-size: 28px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+button{
+    border-style: none;
+    padding: 10px;
+    background-color:rgba(64,63,76,.7);
+    background-color:rgba(196,66,57,.7);
+    background-color:rgba(249,194,0,.7);
+    color: white;
+    font-family: "Spline Sans";
+    font-size: 20px;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
