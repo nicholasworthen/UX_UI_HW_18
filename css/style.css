@@ -1,4 +1,7 @@
 
+/**{
+    outline: 1px red solid;
+}*/
 .inline-block{
     
     display: inline-block;
@@ -26,7 +29,7 @@ div.inline-block{
     width: 23%;
 }
 
-h1{
+#siteTitle{
     
     width: 90%;
     text-align: right;
@@ -34,6 +37,11 @@ h1{
     font-size: 50px;
     margin: auto;
     padding-top: 2%;
+}
+.sectionTitle{
+
+    font-family: Volkhov;
+    font-size: 40px;
 }
 
 nav{
@@ -96,7 +104,7 @@ footer ul{
     margin: auto;
     
 }
-p{
+.heroStatement{
     background-color:rgba(49,133,252,.8);
      
     padding: 20px;
@@ -108,6 +116,8 @@ p{
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+
 button{
     border-style: none;
     padding: 10px;
@@ -121,4 +131,50 @@ button{
     top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+
+
+#empathy{
+    width: 700px;
+    height: 200px;
+    background-image: url("../images/empathyMapAI01.png");
+    outline: 1px solid red;
+}
+.flexContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+.skillBox{
+    width: 50%;
+}
+.skillIMGBox{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    align-items: center;
+}
+.skillIMG{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    object-position:50% 10% ;
+    
+}
+
+.skillName{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    background-color:rgba(49,133,252,1);
+    
+         
+    
+    color: white;
+    font-family: "Spline Sans";
+    font-size: 28px;
+    text-justify: center;
 }
