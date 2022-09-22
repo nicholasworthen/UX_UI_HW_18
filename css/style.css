@@ -2,6 +2,7 @@
 /**{
     outline: 1px red solid;
 }*/
+
 .inline-block{
     
     display: inline-block;
@@ -41,8 +42,11 @@ div.inline-block{
 .sectionTitle{
 
     font-family: Volkhov;
-    font-size: 40px;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
 }
+
 
 nav{
     
@@ -75,6 +79,8 @@ li{
     background-color: #3185FC;
     
 }
+
+
 
 .heroImg{
     
@@ -127,28 +133,42 @@ button{
     color: white;
     font-family: "Spline Sans";
     font-size: 20px;
+    
+}
+
+#resumeButton{
     position: absolute;
     top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-
-
-#empathy{
-    width: 700px;
-    height: 200px;
-    background-image: url("../images/empathyMapAI01.png");
-    outline: 1px solid red;
+/*MY SKILLS CSS*/
+.mySkills{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
 }
 .flexContainer{
     display: flex;
+    flex-direction: row;
+    width: 73%;
+    margin: 0 auto;
+    align-items: top;
+    justify-content: center;
+    
+    
+}
+.skillsBox{
+    display: flex;
     flex-direction: column;
     align-items: center; 
+    width: 20%;
+    padding: 20px;
 }
-.skillBox{
-    width: 50%;
-}
+
+
+
 .skillIMGBox{
     position: relative;
     width: 100%;
@@ -169,12 +189,93 @@ button{
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 10px;
-    background-color:rgba(49,133,252,1);
+    background-color:#403F4C;
     
          
     
     color: white;
     font-family: "Spline Sans";
     font-size: 28px;
-    text-justify: center;
+    text-align: center;
+}
+
+
+/*MY WORK CSS*/
+.myWork{
+    width: 73%;
+    margin: 0 auto;
+}
+.workIMG{
+ max-height: 600px;   
+}
+.item1{grid-area: sniffrIMG;}
+.item2{grid-area: sniffrTXT;}
+.item3{grid-area: gwaIMG;}
+.item4{grid-area: gwaTXT;}
+
+.workGrid{
+    
+    display: grid;
+    grid-template-areas:
+        "sniffrIMG gwaIMG"
+        "sniffrTXT gwaTXT";
+    grid-template-columns: 30% 30%;
+    column-gap: 10px;
+    
+    justify-content: center;
+}
+.gridItem{
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+.gridItem>h4,.gridItem>p{
+    width: 100%;
+
+}
+
+.gridItem>h4{
+    
+        font-family: Volkhov;
+        font-size: 20px;
+        text-align: center;
+        
+    
+}
+h3{
+    text-align: center;
+}
+
+@media screen and (max-width: 600px){
+    .flexContainer{
+    display: flex;
+    flex-direction: column;
+    width: 73%;
+    margin: 0 auto;
+    
+    justify-content: center;
+    }
+    .skillsBox{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        width: 100%;
+        padding: 20px;
+    }
+
+    .workGrid{
+        
+    display: grid;
+    grid-template-areas:
+        "sniffrIMG" 
+        "sniffrTXT" 
+        "gwaIMG"
+        "gwaTXT";
+    grid-template-columns: 90%;
+    justify-content: center;
+
+    }
 }
